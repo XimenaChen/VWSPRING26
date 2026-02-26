@@ -2,7 +2,7 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 
-public class HoverSelectText : MonoBehaviour
+public class HoverSelectTest : MonoBehaviour
 {
     public GameObject panel;
     public TextMeshProUGUI hoverText;
