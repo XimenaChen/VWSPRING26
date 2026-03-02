@@ -8,6 +8,8 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField] AudioClip calling;
     [SerializeField] AudioClip callingnew;
+    [SerializeField] AudioClip ring;
+    [SerializeField] AudioClip secondCalling;
 
     void Start()
     {
@@ -36,6 +38,14 @@ public class AudioManager : MonoBehaviour
         else if (clip == "callingnew") {
             audioSource.clip = callingnew;
             audioSource.Play();
+        }else if (clip == "ring") {
+            audioSource.clip = ring;
+            audioSource.Play();
+            
+        }else if (clip == "secondCalling") {
+            audioSource.clip = secondCalling;
+            audioSource.Play();
+            
         }
     }
 }

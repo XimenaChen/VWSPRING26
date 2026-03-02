@@ -82,6 +82,12 @@ public class ComputerInteraction : MonoBehaviour
         correctPanel.SetActive(false);
     }
 
+    public void ClosePasswordPanel()
+    {
+        passwordPanel.SetActive(false);
+        if (spatialKeyboard != null) spatialKeyboard.SetActive(false);
+    }
+
     // 补全缺失的函数 2：从错误面板返回输入面板
     public void ReturnToPasswordPanel()
     {
