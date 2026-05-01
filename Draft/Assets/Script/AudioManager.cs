@@ -10,6 +10,14 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioClip callingnew;
     [SerializeField] AudioClip ring;
     [SerializeField] AudioClip secondCalling;
+     [SerializeField] AudioClip alarm;
+       [SerializeField] AudioClip applaud;
+
+  [SerializeField] AudioClip manyapplaud;
+
+  [SerializeField] AudioClip turnonlight;
+  [SerializeField] AudioClip stonemove;
+
 
     void Start()
     {
@@ -46,6 +54,28 @@ public class AudioManager : MonoBehaviour
             audioSource.clip = secondCalling;
             audioSource.Play();
             
+        }else if (clip == "alarm") {
+            audioSource.clip = alarm;
+            audioSource.loop = true;
+            audioSource.PlayDelayed(5.0f);
+            
+        }
+    
+        else if (clip == "applaud") {
+            audioSource.clip = applaud;
+            audioSource.Play();
+        }
+        else if (clip == "manyapplaud") {
+            audioSource.clip = manyapplaud;
+            audioSource.Play();
+        }
+        else if (clip == "turnonlight") {
+            audioSource.clip = turnonlight;
+            audioSource.Play();
+        }
+        else if (clip == "stonemove") {
+            audioSource.clip = stonemove;
+            audioSource.Play();
         }
     }
 }

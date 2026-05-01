@@ -3159,7 +3159,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8e909b819bd5b9449b9f2749be2e5820, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7fc41f2cc7c316f45abefa7eaa50bff3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4014,17 +4014,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1516063970}
-        m_TargetAssemblyTypeName: BeforePhoneInteraction, Assembly-CSharp
-        m_MethodName: ObjectClicked
-        m_Mode: 1
+      - m_Target: {fileID: 598787548}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
@@ -6663,6 +6663,10 @@ PrefabInstance:
       propertyPath: m_SmoothMotionEnabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5033801203051696737, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5227292470352409039, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Layer
       value: 2
@@ -7440,6 +7444,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1349952714}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &612955777
 MonoBehaviour:
@@ -8611,7 +8627,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.009576079, y: 0.009584311, z: 0.020068854}
   m_Center: {x: 0.00000035995618, y: 0.00000029476365, z: -0.0000009946527}
@@ -12111,7 +12127,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.012605209, y: 0.0025670896, z: 0.020066198}
   m_Center: {x: 0.000000094994896, y: 0.0000000057043503, z: 0.0000005802139}
@@ -16501,7 +16517,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516063957}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec3ed1a152b0d20469899ba95ec1afe0, type: 3}
   m_Name: 
@@ -16847,7 +16863,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516063957}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c0e1c0d5f6ab616419e1053f3498da45, type: 2}
   m_CullingMode: 0
@@ -16873,14 +16889,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518cbc72e966b6d44b369ea7ef8054bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BeforePhoneInteraction
-  targetCount: 4
-  onAllObjectsSelected:
+  targetObjects:
+  - {fileID: 209624526}
+  - {fileID: 1189687030}
+  - {fileID: 1122372301}
+  - {fileID: 280776369}
+  onAllTasksComplete:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 598787548}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1516063967}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1516063961}
+        m_TargetAssemblyTypeName: HoverSelectTest, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1560817221}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: playClip
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -17153,6 +17197,11 @@ MonoBehaviour:
   callingnew: {fileID: 8300000, guid: 6730fffc9c75a0344aae9bfddc7fd933, type: 3}
   ring: {fileID: 8300000, guid: 70cb63aaf10c3fa4198342166c6f5c41, type: 3}
   secondCalling: {fileID: 8300000, guid: 48e98f7a191d99e4a92a25a93da32dad, type: 3}
+  alarm: {fileID: 0}
+  applaud: {fileID: 0}
+  manyapplaud: {fileID: 0}
+  turnonlight: {fileID: 0}
+  stonemove: {fileID: 0}
 --- !u!82 &1560817222
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17611,6 +17660,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: ComputerInteraction, Assembly-CSharp
         m_MethodName: ValidatePassword
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 656528910}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -21619,7 +21680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2119630727
 MonoBehaviour:
   m_ObjectHideFlags: 0
